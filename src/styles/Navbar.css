@@ -1,0 +1,116 @@
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  padding: 16px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.search-container {
+  flex: 1;
+  display: none;
+}
+
+.search-group {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid #f7f7f7;
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+
+.search-input {
+  flex: 1;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mobile-logo {
+  height: 40px;
+  width: auto;
+}
+
+.action-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.create-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #550fd0;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 32px;
+  transition: all 0.3s;
+}
+
+.create-button:hover {
+  background: #651be5;
+}
+
+.pro-badge {
+  width: 40px;
+  height: 40px;
+  background: url('https://r2.starryai.com/public/uploads/2024-09-11/e122a473-41a9-43df-ba99-d38371f41e7f.png');
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.user-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .search-container {
+    display: flex;
+  }
+
+  .search-group{
+    max-width: 200px;
+    width: 100%;
+    background: none;
+  }
+
+  .action-container {
+    /* flex-direction: column; */
+    gap: 8px;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}
