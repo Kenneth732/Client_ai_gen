@@ -6,6 +6,7 @@ import Sidebar from "./components/Sidebar";
 import HomePage from "./pages/HomePage";
 import UploadTrainingImages from "./components/UploadTrainingImages";
 
+
 function App() {
   return (
     <div className="">
@@ -21,3 +22,4 @@ function App() {
 }
 
 export default App;
+
